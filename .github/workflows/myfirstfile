@@ -1,0 +1,10 @@
+name: Github actions workflow
+on: push
+jobs: 
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Learning Github actions
+          run: echo "I should get new project allocation"
+        - name: Manifesting
+          run: Manifesting to get project allocation asap
