@@ -1,0 +1,13 @@
+name: ASCII Github actions workflow
+on: 
+   push
+jobs: 
+  ascii_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v4
+    - name: list Repo files
+      run: ls
+    - name: install cowsay program
+      run: sudo apt get install cowsay -y
